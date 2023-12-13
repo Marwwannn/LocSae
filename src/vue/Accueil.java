@@ -123,7 +123,7 @@ public class Accueil extends JFrame {
         
         JMenu mnNewMenu_4 = new JMenu("Connexion");
         menuBar.add(mnNewMenu_4);
-    }
+    }////////
 
     public void actionPerformed(ActionEvent e) {
         gestionClic.actionPerformed(e);

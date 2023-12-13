@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>SAELocataire3</name>
+	<name>SAELocataire5</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>image/maisonVillage.png</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/Downloads/Maison%20village.png</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

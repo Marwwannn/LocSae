@@ -215,6 +215,7 @@ public class PageAjoutLocataire extends JInternalFrame {
 		textField_4 = new JTextField();
 		panel_6.add(textField_4);
 		textField_4.setColumns(10);
+		}
 
 //		JPanel panel_7 = new JPanel();
 //		panelLogementAssocied_4 = new JTextField();
@@ -229,7 +230,69 @@ public class PageAjoutLocataire extends JInternalFrame {
 //		lblNewLabel_7.setIcon(new ImageIcon("C:\\Users\\sirfo\\Downloads\\179337 (3).png"));
 //		panel_7.add(lblNewLabel_7);
 		
-		
-	}
+		public String getChampNom() {
+	        return champNom.getText();
+	    }
+
+	    public void setChampNom(JTextField champNom) {
+	        this.champNom = champNom;
+	    }
+
+	    public String getChampPrenom() {
+	        return champPrenom.getText();
+	    }
+
+	    public void setChampPrenom(JTextField champPrenom) {
+	        this.champPrenom = champPrenom;
+	    }
+
+	    public JTextField getChampTelephone() {
+	        return champTelephone;
+	    }
+
+	    public void setChampTelephone(JTextField champTelephone) {
+	        this.champTelephone = champTelephone;
+	    }
+
+	    public String getChampMail() {
+	        return champMail.getText();
+	    }
+
+	    public void setChampMail(JTextField champMail) {
+	        this.champMail = champMail;
+	    }
+
+	    public String getChampAdresse() {
+	        return champAdresse.getText();
+	    }
+
+	    public void setChampAdresse(JTextField champAdresse) {
+	        this.champAdresse = champAdresse;
+	    }
+
+	    public String getChampCodePostal() {
+	        return champCodePostal.getText();
+	    }
+
+	    public void setChampCodePostal(JTextField champCodePostal) {
+	        this.champCodePostal = champCodePostal;
+	    }
+
+	    public String getChampBatiment() {
+	        return champBatiment.getText();
+	    }
+
+	    public void setChampBatiment(JTextField champBatiment) {
+	        this.champBatiment = champBatiment;
+	    }
+
+	    public String getChampEtage() {
+	        return champEtage.getText();
+	    }
+
+	    public void setChampEtage(JTextField champEtage) {
+	        this.champEtage = champEtage;
+	    }
+	
 
 }

@@ -1,11 +1,14 @@
 package modele.dao;
 
+import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
 
+import SQL.CictOracleDataSource;
 import modele.Locataire;
 import modele.dao.requetes.RequeteSelectLocataire;
+import modele.dao.requetes.SousProgrammeInsertLocataire;
 
 public class DaoLocataire extends DaoModele<Locataire> implements Dao<Locataire> {
 
@@ -30,10 +33,14 @@ public class DaoLocataire extends DaoModele<Locataire> implements Dao<Locataire>
 	}
 
 	@Override
-	public void create(Locataire donnee) throws SQLException {
-		// TODO Auto-generated method stub
-
+	public void create(Locataire locataire) throws SQLException {
+	    SousProgrammeInsertLocataire sousProgrammeInsertLocataire = new SousProgrammeInsertLocataire();
+	    try (CallableStatement cs = CictOracleDataSource.getConnectionBD().prepareCall(sousProgrammeInsertLocataire.appelSousProgramme())) {
+	        sousProgrammeInsertLocataire.parametres(cs, locataire);
+	        cs.execute();
+	    }
 	}
+
 
 	@Override
 	public void delete(Locataire donnee) throws SQLException {
