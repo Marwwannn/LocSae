@@ -46,7 +46,7 @@ public class FenetreListeLocataire extends JInternalFrame {
         // Boutons d'action
         JPanel buttonPanel = new JPanel(new FlowLayout());
 
-        JButton modifierButton = new JButton("Modifier");
+        JButton modifierButton = new JButton("Refresh");
         modifierButton.addActionListener(this.gestionClic); 
         
         JButton supprimerButton = new JButton("Supprimer");

@@ -37,7 +37,7 @@ public class GestionListeLocataire implements ActionListener {
             switch (button.getText()) {
                 case "Voir le bien immobilier concerné":
                 	break;
-			case "Modifier":
+			case "Refresh":
 				try {
 					this.afficherLocataire();
 				} catch (SQLException e1) {
