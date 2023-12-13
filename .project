@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>image/maisonVillage.png</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/Downloads/Maison%20village.png</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
